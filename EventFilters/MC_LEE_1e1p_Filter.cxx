@@ -69,8 +69,10 @@ namespace larlite {
 
       // Count protons above 60 MeV deposited energy
       // (60 MeV because that's what the deep learning group is using)
+      // Note that since I'm using mctruth (and not mctrack), let's just use kinetic energy instead of deposited
+      // (reminder, KE is in GeV)
       if ( abs(particle.PdgCode()) == 2212 )
-        if ( particle.Trajectory().front().E() - particle.Trajectory().back().E() >= 60. )
+        if ( KE >= 0.060 )
           n_viable_protons++;
 
       /*
