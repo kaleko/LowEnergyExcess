@@ -17,6 +17,7 @@
 #pragma link C++ class larlite::MC_NC_Filter+;
 #pragma link C++ class larlite::MC_CCnumu_Filter+;
 #pragma link C++ class larlite::MC_LEE_Filter+;
+#pragma link C++ class larlite::MC_LEE_1e1p_Filter+;
 #pragma link C++ class larlite::CosmicTriggerHacker+;
 //ADD_NEW_CLASS ... do not change this line
 #endif
